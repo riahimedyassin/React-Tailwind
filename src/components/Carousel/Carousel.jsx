@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import React, { useState } from 'react'
 
-function Carousel({ children, showDots, showDecimal }) {
+function Carousel({ children }) {
     const [index, setIndex] = useState(0)
     const handleNext = () => {
         index < children.length - 1 ? setIndex((prev) => prev + 1) : index
@@ -12,7 +12,7 @@ function Carousel({ children, showDots, showDecimal }) {
     }
 
     return (
-        <div className='flex justify-center items-center relative flex-col w-full  md:space-y-16 sm:space-y-6'>
+        <div className='flex justify-center items-center relative flex-col w-full  md:space-y-16 sm:space-y-6 h-[500px] '>
             {children[index]}
             <div className='space-x-9'>
                 <button onClick={handlePrev}>

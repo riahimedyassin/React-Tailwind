@@ -1,5 +1,4 @@
 import React from 'react'
-import './Header.scss'
 import Carousel from '../Carousel/Carousel'
 import Wallpaper1 from '../../assets/wallpaper.jpg'
 import Wallpaper2 from '../../assets/wallpaper2.webp'
