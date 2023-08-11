@@ -13,7 +13,7 @@ function NavBar() {
     }
 
     return (
-        <nav className="h-32 w-full  flex items-center justify-between px-24 relative">
+        <nav className="h-32 w-full  flex items-center justify-between md:px-24 relative sm:px-4 ">
             <img src={Logo} alt="" className='h-8 w-24' />
             <ShopList visiblity={isVisible} />
             <ul className='flex space-x-6 w-auto cursor-pointer'>
@@ -22,7 +22,7 @@ function NavBar() {
                 <li>New arrival</li>
                 <li>Brands</li>
             </ul>
-            <div className='flex space-x-4 items-center '>
+            <div className='space-x-4 items-center md:flex sm:hidden '>
                 <Input Icon={<Search color='gray' />} height="h-12" />
                 <User />
                 <ShoppingBasket />

@@ -20,7 +20,7 @@ function Header() {
         header: "Level Up your summer with our new collection"
     }]
     return (
-        <main className=' w-full mt-16 h-[500px] p-6  rounded-lg   '>
+        <main className=' w-full mt-16 h-[500px] p-6  rounded-lg   sm:p-0'>
             <Carousel >
                 {Imgs.map((img, index) => {
                     return <CarouselItem background={img.src} key={index} header={img.header} />
